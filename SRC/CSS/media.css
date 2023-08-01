@@ -3,6 +3,7 @@ celular:  812
 tablet: 1024
 pc : 1920 */
 
+/* TABLETS */
 @media screen and (min-width:812px) and (max-width:1024px) {
     body {
         background-image: linear-gradient(to top, #030C20, #072364, #072978);
@@ -12,11 +13,15 @@ pc : 1920 */
         width: 80vw;
         display: flex;
         flex-direction: row;
+        height: 400px;
+    }
+    form{
+        padding-top: 50px;
     }
 
     div#imagem {
         float: left;
-        width: 50%;
+        width: 70%;
         height: 100%;
     }
 
@@ -24,7 +29,7 @@ pc : 1920 */
         float: right;
     }
 }
-
+/* DESKTOP E TELAS MAIORES */
 @media screen and (min-width:1024px) {
     body {
         background-image: linear-gradient(to top, #030C20, #072364, #072978);
@@ -33,11 +38,21 @@ pc : 1920 */
     section#login {
         width: 1020px;
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
+        align-items: center;
+        height: 470px;
     }
-
+    form {
+        padding-top: 40px;
+    }
     div#imagem {
         width: 50%;
         height: 100%;
+    }
+    div#formulario h1{
+        font-size: 1.3em;
+    }
+    div#formulario p{
+        font-size: 1.2em;
     }
 }
